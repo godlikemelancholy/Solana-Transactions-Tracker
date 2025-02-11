@@ -1,0 +1,19 @@
+[Unit]
+Description=Python Daemon
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+User=root
+ExecStart=/usr/bin/python3 /root/solana-ws/solana_ws.py
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
+
